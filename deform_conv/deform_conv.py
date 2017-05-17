@@ -136,7 +136,7 @@ def sp_batch_map_offsets(input, offsets):
     return mapped_vals
 
 
-def tf_batch_map_offsets(input, offsets, order=1):
+def  tf_batch_map_offsets(input, offsets, order=1):
     """Batch map offsets into input
 
     Parameters

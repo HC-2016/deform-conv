@@ -37,7 +37,8 @@ def get_cnn():
 
 
 def get_deform_cnn(trainable):
-    inputs = l = Input((28, 28, 1), name='input')
+    # inputs = l = Input((28, 28, 1), name='input')
+    inputs = l = Input(batch_shape=(1, 28, 28, 1), name='input')
 
     # conv11
     l = Conv2D(32, (3, 3), padding='same', name='conv11', trainable=trainable)(l)
